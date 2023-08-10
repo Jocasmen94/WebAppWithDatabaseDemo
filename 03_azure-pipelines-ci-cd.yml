@@ -213,10 +213,10 @@ stages:
       enabled: ${{ parameters.runCompletePipeline }}
       continueOnError: true
       inputs:
-        ConnectedServiceNameARM: 'WebAppWithDatabaseDemo_spn'
+        ConnectedServiceNameARM: 'demo'
         GenerateMethodParameterSetSelection: 'ResourceGroupName'
         ResourceGroupName: '$(ResourceGroupName)'
-        SubscriptionId: '4b72ed90-7ca3-4e76-8d0f-31a2c0bee7a3'
+        SubscriptionId: 'db199aad-be9e-4d5c-bae2-4fa2c102d7f3'
         EnableGSSscan: true
 
   - job: Deploy_DEV
